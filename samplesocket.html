@@ -1,0 +1,39 @@
+<html>
+   <meta charset = "utf-8" />
+   <title>WebSocket Test</title>
+<body>
+<h2>WebSocket Test</h2>
+<div id = "output"></div>
+
+<script language = "javascript" type = "text/javascript">
+    //var wsUri = "ws://echo.websocket.org/";
+    var wsUri = "ws://echo.websocket.events/"
+    var output;
+  
+    function init() {
+       output = document.getElementById("output");
+       testWebSocket();
+    }
+  
+    function testWebSocket() {
+       websocket = new WebSocket(wsUri);
+          
+       websocket.onopen = function(evt) {
+          onOpen(evt)
+       };
+    }
+  
+    function onOpen(evt) {
+       writeToScreen("CONNECTED");
+    }
+    function writeToScreen(message) {
+         var pre = document.createElement("p"); 
+         pre.style.wordWrap = "break-word"; 
+         pre.innerHTML = message; output.appendChild(pre);
+      }
+    window.addEventListener("load", init, false);
+ 
+ </script>
+
+</body>
+</html>
