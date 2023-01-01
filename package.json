@@ -1,0 +1,25 @@
+{
+  "name": "websockets1",
+  "version": "1.0.0",
+  "description": "first run for learning websockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gliefsoe/websockets1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gliefsoe/websockets1/issues"
+  },
+  "homepage": "https://github.com/gliefsoe/websockets1#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "websocket": "^1.0.34",
+    "ws": "^8.11.0"
+  }
+}
